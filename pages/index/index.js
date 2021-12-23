@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    safeBottom: 0
   },
 
   /**
@@ -41,6 +41,12 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    const { safeArea: {height,top}, screenHeight} = wx.getSystemInfoSync()
+    if ((height+top) == screenHeight) {
+      this.setData({
+        safeBottom: 110
+      })
+    }
   },
 
   /**

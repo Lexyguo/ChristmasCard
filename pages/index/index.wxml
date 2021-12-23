@@ -10,4 +10,4 @@
     <view class="snowflake"></view>
   </block>
 </view>
-<image class="snow-drift" src="/images/snow_drift_strong.png" mode="aspectFill"></image>
+<image class="snow-drift" style="bottom:{{-30-safeBottom}}rpx" src="/images/snow_drift_strong.png" mode="aspectFill"></image>
