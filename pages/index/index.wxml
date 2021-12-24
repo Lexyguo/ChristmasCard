@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <text id="slog" class="maria slog"> Merry Christmas !</text>
 <view class="tree">
-  <image class="tree-bg" src="/images/Stitch_tree.jpeg" mode="aspectFit"></image>
+  <image class="tree-bg" src="/media/images/Stitch_tree.jpeg" mode="aspectFit"></image>
   <view class="shining-start"></view>
 </view>
 
@@ -10,4 +10,4 @@
     <view class="snowflake"></view>
   </block>
 </view>
-<image class="snow-drift" style="bottom:{{-30-safeBottom}}rpx" src="/images/snow_drift_strong.png" mode="aspectFill"></image>
+<image class="snow-drift" style="bottom:{{-30-safeBottom}}rpx" src="/media/images/snow_drift_strong.png" mode="aspectFill"></image>
