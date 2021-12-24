@@ -24,7 +24,6 @@ Page({
     this.audioCtx.src = 'http://antiserver.kuwo.cn/anti.s?rid=MUSIC_56209792&response=res&format=mp3|aac&type=convert_url&br=128kmp3&agent=iPhone&callback=getlink&jpcallback=getlink.mp3'
     this.audioCtx.loop = true
     this.audioCtx.seek = 50
-    this.audioCtx.stop()
     this.audioCtx.onPlay(() => {
       console.log('开始播放')
     })

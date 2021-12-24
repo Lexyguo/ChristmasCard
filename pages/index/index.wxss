@@ -35,13 +35,43 @@ page {
   height: inherit;
 }
 
-.shining {
+.shining-start {
   width: 0;
   height: 0;
-  box-shadow: 40rpx 40rpx 40rpx 40rpx #f5eb5b;
+  animation: shining 1.3s linear infinite;
   position: absolute;
-  left: 356rpx;
-  top: 78rpx;
+  left: 392rpx;
+  top: 110rpx;
+}
+
+@keyframes shining{
+  0% {
+      opacity: 0.6;
+      box-shadow: 0 0 30rpx 30rpx #f5eb5b;
+  }
+  40% {
+      opacity: 1;
+      box-shadow: 0 0 50rpx 50rpx #f5eb5b;
+  }
+  100% {
+      opacity: 0.6;
+      box-shadow: 0 0 30rpx 30rpx #f5eb5b;
+  }
+}
+
+@-webkit-keyframes shining{
+  0% {
+      opacity: 0.6;
+      box-shadow: 0 0 30rpx 30rpx #f5eb5b;
+  }
+  40% {
+      opacity: 1;
+      box-shadow: 0 0 50rpx 50rpx #f5eb5b;
+  }
+  100% {
+      opacity: 0.6;
+      box-shadow: 0 0 30rpx 30rpx #f5eb5b;
+  }
 }
 
 .snow-drift {
